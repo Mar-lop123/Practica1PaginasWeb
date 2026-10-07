@@ -1,0 +1,147 @@
+:root{
+
+    --amarillo: #f6fa22;
+    --verde: #10ff08;
+    --cafe: #b87905;
+    --rosa: #fc4ec2;
+    --rojo: #f11707;
+    --azul: #310ae0;
+    --naranja: #FF9900;
+
+    --txtcolor: #000;
+    --bgcolor: #fffafa;
+
+}
+body{
+    background-color: var(--bgcolor);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 2rem;
+    transition: background-color 0.5s;
+}
+.div_flex{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.div_flexhijo{
+    height: 10rem;
+    width: 16%;
+    border-radius: 15px;
+    padding: 1rem;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: transform 0.5s ease-in-out;
+}
+.btn{
+    display: block;
+    margin: 3rem auto;
+    padding: 1.3rem 3rem;
+    font-size: 1.5rem;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: black;
+    color: white;
+}
+
+.amarillo{
+    background-color: var(--amarillo);
+}
+.rojo{
+
+    background-color: var(--rojo);
+}
+.rosa{
+    background-color: var(--rosa);
+}
+.naranja{
+    background-color: var(--naranja);
+}
+.verde{
+    background-color: var(--verde);
+}
+.azul{
+    background-color: var(--azul);
+}
+.cafe{
+    background-color: var(--cafe);
+}
+
+#div1:hover{
+    transform: scale(1.1);
+}
+#div2:hover{
+    transform: rotate(5deg);
+}
+#div3:hover{
+    transform: scale(1.1);
+    opacity: 0.7;
+}
+#div4:hover{
+    transform: translateY(-10px);
+}
+#div5:hover{
+    transform: rotate(-5deg);
+}
+#div6:hover{
+    transform: scale(1.1);
+    opacity: 0.7;
+}
+#div7:hover{
+    transform: translateY(-10px);
+}
+#div8:hover{
+    transform: rotate(5deg);
+    transform: scale(1.1);
+}
+h1{
+    color: var(--txtcolor);
+    font-size: 3rem;
+    text-align: center;
+}
+n{
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    border: 1px solid black;
+    display: block;
+    margin: 2rem auto;
+}
+.btn:hover{
+    cursor: pointer;
+}
+@media screen and (max-width: 1024px){
+    .div_flexhijo{
+        width: 40%;
+    }
+}
+@media screen and (max-width: 768px){
+    .div_flexhijo{
+        width: 75%;
+    }
+    .div_flex{
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 480px){
+
+    .div_flexhijo{
+        width: 90%;
+    }
+    h1{
+        font-size: 1.7rem;
+    }
+}
